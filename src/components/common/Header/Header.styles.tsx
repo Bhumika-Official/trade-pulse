@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const MainContainer = styled.div`
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index:1000;
+`
+
+export const TopContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+`
+
 export const TabsContainer = styled.div`
   display: flex;
   justify-content: space-between;

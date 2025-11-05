@@ -1,4 +1,4 @@
-import { Tab, TabsContainer } from "./Header.styles";
+import { MainContainer, Tab, TabsContainer, TopContainer } from "./Header.styles";
 import { useTab } from "../../../pages/TabContext";
 
 export default function Header() {
@@ -6,20 +6,12 @@ export default function Header() {
   const tabs = ["Favourites", "Forex", "Crypto", "Indices", "Deriv"];
 
   return (
-    <div style={{ backgroundColor: "black", position: "sticky", top: 0, zIndex: 1000 }}>
-      {/* Top Containet */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "10px 20px",
-        }}
-      >
+    <MainContainer>
+      {/* Top Container */}
+      <TopContainer>
         <div className="fa fa-bars" style={{ fontSize: "22px", color: "#fff", cursor: 'pointer' }}></div>
         <div className="fa fa-filter" style={{ fontSize: "22px", color: "#fff", cursor: 'pointer' }}></div>
-      </div>
-
+      </TopContainer>
       {/* Tabs Container */}
       <TabsContainer>
         {tabs.map((tab) => (
@@ -28,7 +20,7 @@ export default function Header() {
           </Tab>
         ))}
       </TabsContainer>
-    </div>
+    </MainContainer>
   );
 }
 
