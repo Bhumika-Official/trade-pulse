@@ -8,7 +8,7 @@ export default function Footer() {
     <div style={{
       backgroundColor: 'black',
       padding: '10px 0',
-      borderTop: '1px solid #222'
+      // borderTop: '1px solid #222'
     }}>
       <div style={{
         display: 'flex',
@@ -25,7 +25,8 @@ export default function Footer() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            padding: '0px 5%'
+            padding: '0px 5%',
+            cursor: 'pointer'
           }}>
             <img width="28px" src={icon} alt={label} />
             <div style={{ fontSize: '14px', color: '#ccc', fontWeight: '500' }}>{label}</div>

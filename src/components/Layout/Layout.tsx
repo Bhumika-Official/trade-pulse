@@ -20,7 +20,7 @@ export default function Layout({ children }: LayoutProps) {
                 }}
             >
                 <Header />
-                <main style={{ flex: 1, overflowY: "auto" }}>
+                <main style={{ flex: 1}}>
                     {children}
                 </main>
                 <Footer />

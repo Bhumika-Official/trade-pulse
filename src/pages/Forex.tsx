@@ -1,17 +1,12 @@
 
 import { useTab } from "../pages/TabContext";
+import { ScrollContainer } from "./Forex.styles";
 
 export const Dashboard = () => {
   const { activeTab } = useTab();
 
   return (
-    <div
-      style={{
-        color: "#fff",
-        fontFamily: "Inter, sans-serif",
-        overflowY: "auto",
-      }}
-    >
+    <ScrollContainer style={{ height: "calc(100vh - 170px)" }}>
       <div style={{}}>
         {activeTab === "Forex" &&
           <>
@@ -179,7 +174,7 @@ export const Dashboard = () => {
         {activeTab === "Deriv" && <p>----- Derivatives data----- coming soon...</p>}
         {activeTab === "Favourites" && <p>------ Favourites data----- coming soon...</p>}
       </div>
-    </div>
+    </ScrollContainer>
   );
 };
 

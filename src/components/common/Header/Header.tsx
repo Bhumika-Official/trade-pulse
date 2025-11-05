@@ -16,8 +16,8 @@ export default function Header() {
           padding: "10px 20px",
         }}
       >
-        <div className="fa fa-bars" style={{ fontSize: "22px", color: "#fff" }}></div>
-        <div className="fa fa-filter" style={{ fontSize: "22px", color: "#fff" }}></div>
+        <div className="fa fa-bars" style={{ fontSize: "22px", color: "#fff", cursor: 'pointer' }}></div>
+        <div className="fa fa-filter" style={{ fontSize: "22px", color: "#fff", cursor: 'pointer' }}></div>
       </div>
 
       {/* Tabs Container */}

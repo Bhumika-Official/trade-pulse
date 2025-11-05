@@ -27,6 +27,7 @@ const PairInfo = styled.div`
 `;
 
 const Flag = styled.img`
+  border: 2px solid red;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -50,8 +51,8 @@ export const ForexCard: React.FC<ForexCardProps> = ({
   return (
     <Card>
       <PairInfo>
-        <Flag src={`https://flagsapi.com/${base === "EUR" ? "EU" : base}/flat/32.png`} alt={base} />
-        <Flag src={`https://flagsapi.com/${symbol === "GBP" ? "GB" : symbol}/flat/32.png`} alt={symbol} />
+        <Flag src={`https://flagsapi.com/${base === "EUR" ? "US" : base}/flat/32.png`} alt={base} />
+        <Flag src={`https://flagsapi.com/${symbol === "GBP" ? "RO" : symbol}/flat/32.png`} alt={symbol} />
         <div>
           <div>{base}/{symbol}</div>
           <small style={{ color: "#00ff88" }}>
